@@ -46,7 +46,7 @@ if (optList.isPresent()) {
 						style="display: block; padding: 0 0; text-decoration: none; width: 100%;"
 						onclick=<form method="get" action="Ichiran">
 							<input type="submit" name="aaa"　value=<%=s[2]%> />
-							</form>></a>
+							</form>></a> 
 					-->
 			</td>
 
