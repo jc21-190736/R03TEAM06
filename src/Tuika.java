@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.sql.DataSource;
 
-//データベース追加用サーブレット
+//データベース追加用サーブレット　
 
 @WebServlet("/tuika")
 
