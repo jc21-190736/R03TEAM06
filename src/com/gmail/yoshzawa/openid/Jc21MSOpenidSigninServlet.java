@@ -41,7 +41,7 @@ public final class Jc21MSOpenidSigninServlet extends HttpServlet {
 			url = "https://login.microsoftonline.com/organizations/oauth2/v2.0/authorize";
 			url += "?client_id=" + AzureAppIdLocal;
 			url += "&response_type=id_token";
-			url += "&redirec_uri=http%3A%2F%2Flocalhost%3A8080%2FloginSample%2Fmsredirect";
+			url += "&redirec_uri=http%3A%2F%2Flocalhost%3A8080%2FR03Team06%2Fmsredirect";
 			url += "&response_mode=form_post";
 			url += "&scope=openid%20profile";
 			url += "&state=12345";
