@@ -8,6 +8,7 @@
 <body>
 	
 	<form method="post" action="tuika">
+	
 
 		<div id= "gazouwaku">
 			<%--↓画像はじめ↓ --%>
