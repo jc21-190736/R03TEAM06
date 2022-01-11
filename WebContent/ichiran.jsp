@@ -15,13 +15,14 @@
 <title>一覧画面</title>
 </head>
 
-<%
+<!-- 
 Optional<List<String[]>> optList = Optional.ofNullable((List<String[]>) request.getAttribute("list"));
 List<String[]> list = new ArrayList<>();
 if (optList.isPresent()) {
 	list = optList.get();
 }
-%>
+ -->
+
 
 <body onload="LoadProc();">
 	<table border="5" width="100%" cellspacing="0" cellpadding="2"
@@ -29,7 +30,7 @@ if (optList.isPresent()) {
 		<tr>
 			<th>食材</th>
 		</tr>
-		<%
+
 		for (String[] s : list) {
 			//if (s[2] == "1") {
 		%>
@@ -46,7 +47,7 @@ if (optList.isPresent()) {
 						style="display: block; padding: 0 0; text-decoration: none; width: 100%;"
 						onclick=<form method="get" action="Ichiran">
 							<input type="submit" name="aaa"　value=<%=s[2]%> />
-							</form>></a> 
+							</form>></a>
 					-->
 			</td>
 

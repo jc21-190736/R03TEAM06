@@ -57,7 +57,7 @@ public class Ichiran extends HttpServlet {
 					.prepareStatement("select comm_id,comm_name,sort_id,count from comm_table ");
 			ResultSet rs = st.executeQuery();*/
 			
-			/*  Statement stmt = (Statement) con.createStatement();
+			/* Statement stmt = (Statement) con.createStatement();
 			  String sql = "select comm_id,comm_name,sort_id,count from comm_table ";
 			  ResultSet rs = ((java.sql.Statement) stmt).executeQuery(sql);*/
 			  
