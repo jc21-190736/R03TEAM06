@@ -12,7 +12,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
+ 
 /**
  * Servlet implementation class measurefinish
  */
@@ -45,7 +45,7 @@ public class measurefinish extends HttpServlet {
 		if (keisoku != null) {
 			// ì˙ïtï\é¶
 			out.println("Today is " + DateFormat.getDateInstance().format(new Date()));
-			keisoku = DateFormat.getDateInstance().format(new Date());
+			keisoku = DateFormat.getDateInstance().format(new Date()); 
 			// å„ÇÕÇ±ÇÍÇSQLï∂Ç…Ç‘ÇøçûÇﬁ
 			out.close();
 		}

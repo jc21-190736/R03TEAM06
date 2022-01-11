@@ -12,7 +12,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
+ 
 /**
  * Servlet implementation class measurestart 
  */
@@ -35,7 +35,7 @@ public class measurestart extends HttpServlet {
 		// TODO Auto-generated method stub
 		response.setContentType("text/html; charset=utf-8");
 		request.setCharacterEncoding("utf-8");
-		PrintWriter out = response.getWriter();
+		PrintWriter out = response.getWriter(); 
 		
 		//ƒ{ƒ^ƒ“‚ð‰Ÿ‚µ‚Äaaa‚ð‚à‚Á‚Ä‚­‚é
 		String keisoku = request.getParameter("s[2]");

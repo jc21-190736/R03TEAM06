@@ -1,5 +1,5 @@
 package ichiran;
-
+ 
 import java.beans.Statement;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -46,7 +46,7 @@ public class Ichiran extends HttpServlet {
 		try {
 			/*
 			 * conn = DriverManager.getConnection(url, user, password); // データベースに対する処理
-			 * java.sql.Statement stmt = conn.createStatement();
+			 * java.sql.Statement stmt = conn.createStatement(); 
 			 */
 
 			InitialContext ic = new InitialContext();

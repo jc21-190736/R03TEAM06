@@ -1,5 +1,5 @@
 <%@page import="java.util.ArrayList"%>
-<%@page import="java.util.Optional"%>
+<%@page import="java.util.Optional"%> 
 <%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
@@ -30,7 +30,7 @@ if (optList.isPresent()) {
 		<tr>
 			<th>食材</th>
 		</tr>
-
+ 
 		for (String[] s : list) {
 			//if (s[2] == "1") {
 		%>
