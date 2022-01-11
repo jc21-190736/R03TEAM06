@@ -15,7 +15,6 @@
 				function OnFileSelect(inputElement) {
 					// ファイルリストを取得
 					var fileList = inputElement.files;
-
 					var loadCompleteCount = 0;
 					var imageList = "";
 						// FileReaderを生成

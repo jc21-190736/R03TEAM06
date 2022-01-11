@@ -24,6 +24,7 @@ public class Tuika extends HttpServlet {
 		response.setContentType("text/html; charset=utf-8");
 		request.setCharacterEncoding("utf-8");
 		PrintWriter out = response.getWriter();
+		
 		try {
 			InitialContext ic = new InitialContext();
 			DataSource ds = (DataSource)ic.lookup(
