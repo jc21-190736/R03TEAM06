@@ -1,6 +1,5 @@
 package ichiran;
  
-import java.beans.Statement;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.PreparedStatement;
@@ -71,7 +70,7 @@ public class Ichiran extends HttpServlet {
 
 			java.util.List<String[]> list = new ArrayList<>();
 			while (rs.next()) {
-				String[] s = new String[4];
+				String[] s = new String[4]; 
 				
 				s[0] = rs.getString("comm_id");
 				s[1] = String.valueOf(rs.getInt("comm_name"));

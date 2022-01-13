@@ -15,14 +15,13 @@
 <title>一覧画面</title>
 </head>
 
-<!-- 
+<%
 Optional<List<String[]>> optList = Optional.ofNullable((List<String[]>) request.getAttribute("list"));
 List<String[]> list = new ArrayList<>();
 if (optList.isPresent()) {
 	list = optList.get();
 }
- -->
-
+%>
 
 <body onload="LoadProc();">
 	<table border="5" width="100%" cellspacing="0" cellpadding="2"
@@ -30,18 +29,18 @@ if (optList.isPresent()) {
 		<tr>
 			<th>食材</th>
 		</tr>
- 
+ <%
 		for (String[] s : list) {
-			//if (s[2] == "1") {
+			if (s[2] == "1") {
 		%>
 		<tr>
-			<td colspan="2" align="center"><%=s[1]%></td>
-			<td colspan="2" align="left"><%=s[3]%>個</td>
+			<td colspan="2" align="center"><%=s[1]%></td><!--名前-->
+			<td colspan="2" align="left"><%=s[3]%>個</td><!--個数-->
 		</tr>
 		<tr>
-			<td height="70">image</td>
+			<td height="70">image</td><!--画像-->
 
-			<td id="text" align="center">
+			<td id="text" align="center"><!--計測開始-->
 				<form action="/admin/measurestart" method="get">
 					<a
 						style="display: block; padding: 0 0; text-decoration: none; width: 100%;"
@@ -49,10 +48,10 @@ if (optList.isPresent()) {
 							<input type="submit" name="aaa"　value=<%=s[2]%> />
 							</form>></a>
 					-->
-			</td>
+			</td> 
 
 
-			<td id="text" align="center">
+			<td id="text" align="center"><!--計測終了-->
 
 				<form action="/admin/measurefinish" method="get">
 					<a
@@ -66,13 +65,12 @@ if (optList.isPresent()) {
 			</td>
 
 
-			<td align="center"><a
+			<td align="center"><!--増減--><a
 				style="display: block; padding: 0 0; text-decoration: none; width: 100%;"
 				href="#">増減</a></td>
 		</tr>
 		<%
-		//}
-		}
+			}
 		%>
 	</table>
 
@@ -81,7 +79,9 @@ if (optList.isPresent()) {
 		<tr>
 			<th>日用品</th>
 		</tr>
-
+<%
+if(s[2]=="2"){
+%>
 		<tr>
 			<td colspan="2" align="center">商品名</td>
 			<td colspan="2" align="left">個数</td>
@@ -101,7 +101,8 @@ if (optList.isPresent()) {
 
 	</table>
 
-
+<%} 
+}%>
 
 
 
