@@ -6,8 +6,7 @@
 <link href="tuika.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	
-	<form method="post" action="tuika">	
+		<form method="post" action="tuika">	
 		<div id= "gazouwaku">
 			<%--↓画像はじめ↓ --%>
 			<script type="text/javascript" language="javascript">

@@ -13,6 +13,7 @@ window.onload = function() {
 		}
 	});
 	
+	
 		//ボタンが押されたらカウント増
 	upbutton.addEventListener('click', (event) => {
 		text.value++;
